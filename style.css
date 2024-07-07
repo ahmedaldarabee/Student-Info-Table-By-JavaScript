@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -o-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+::selection{
+    background-color: #777;
+    color: white;
+}
+
+.parent .table-info table {
+    cursor: pointer;
+
+    text-transform: capitalize;
+    border-collapse: collapse;
+    
+    border: 1px solid #777;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.parent .table-info table thead{
+    background-color: #777;
+    color: white;
+}
+
+.parent .table-info table thead th {
+    padding: 5px 25px;
+}
+
+.parent .table-info table tbody td{
+    text-align: center;
+    border: 1px solid #a1a0a0;
+    padding: 10px;
+}
